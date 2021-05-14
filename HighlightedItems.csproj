@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6D997C8E-5C70-4068-844B-E8BD951C9F42}</ProjectGuid>
+    <ProjectGuid>{1E7B9683-2290-4100-9E23-2345744D7BA7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HighlightedItems</RootNamespace>
@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\</OutputPath>
+    <OutputPath>..\..\..\..\PoEHelper\Plugins\Compiled\HighlightedItems\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -25,26 +25,22 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\..\..\PoEHelper\Plugins\Compiled\HighlightedItems\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ExileCore">
-      <HintPath>..\..\..\ExileCore.dll</HintPath>
+      <HintPath>..\..\..\..\PoEHelper\ExileCore.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="ImGui.NET">
-      <HintPath>..\..\..\ImGui.NET.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="SharpDX.Direct2D1">
-      <HintPath>..\..\..\SharpDX.Direct2D1.dll</HintPath>
+      <HintPath>..\..\..\..\PoEHelper\ImGui.NET.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="SharpDX.Mathematics">
-      <HintPath>..\..\..\SharpDX.Mathematics.dll</HintPath>
+      <HintPath>..\..\..\..\PoEHelper\SharpDX.Mathematics.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

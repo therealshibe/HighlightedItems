@@ -90,7 +90,10 @@ namespace HighlightedItems
                     var prevMousePos = Mouse.GetCursorPosition();
                     foreach (var item in highlightedItems)
                     {
-                        moveItem(item.GetClientRect().Center);
+                        if (stashPanel.IsVisible)
+                        {
+                            moveItem(item.GetClientRect().Center);
+                        }
                     }
                     Mouse.moveMouse(prevMousePos);
                 }
@@ -110,7 +113,7 @@ namespace HighlightedItems
                 {
                     foreach (var item in inventoryItems)
                     {
-                        if (!CheckIgnoreCells(item))
+                        if (!CheckIgnoreCells(item) && inventoryPanel.IsVisible && stashPanel.IsVisible)
                         {
                             moveItem(item.GetClientRect().Center);
                         }
